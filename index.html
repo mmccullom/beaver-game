@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" onkeypress="jump(); grind()">
+  <head>
+    <meta charset="utf-8">
+    <title>Beaver Jumper</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="game">
+      <!-- <img src="YMCA.jpg"> -->
+      <p id="results"></p>
+      <button onclick="dog()" id="restart" style="display: none;">Restart?</button>
+      <div id="score">Score</div>
+      <div id="character">
+        <p id="motivation"></p>
+        <img src="beaver.png" id="beaver1">
+        <img src="beaver copy.png" style="display: none;" id="beaver2">
+      </div>
+      <div id="block">
+        <img src="plates.png" id="obstacle">
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

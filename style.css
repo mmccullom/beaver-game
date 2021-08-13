@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: #bababa; /* Green */
+  border: 1px solid black;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d4d4d4;
+}
+
+#results {
+  position: absolute;
+  top: 25%;
+  left: 47.5%;
+  font-size: 25px;
+  text-align: center;
+}
+
+#game {
+  position: relative;
+  background-color: white;
+  width: 1000px;
+  height: 400px;
+  border: 3px solid black;
+}
+
+#game img{
+  position: absolute;
+  width: 1000px;
+  height: 400px;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+}
+
+#motivation {
+  position: absolute;
+  top: -40px;
+  left: -150px;
+  text-align: center;
+  font-size: 20px;
+  width: 400px;
+}
+
+#character{
+  width: 80px;
+  height: 120px;
+  position: relative;
+  top: 280px;
+  left: 200px;
+}
+
+#character img {
+  width:80px;
+  height:120px;
+}
+
+.animate {
+  animation: jump 600ms;
+}
+
+#block {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 200px;
+  left: 920px;
+  animation: block linear 1.5s infinite;
+}
+
+#block img {
+  width: 80px;
+  height: 80px;
+}
+
+@keyframes jump {
+  0%{top: 280px}
+  50%{top: 130px}
+  100%{top: 280px}
+}
+
+@keyframes block {
+  0%{left: 920px;}
+  100%{left: -80px;}
+}
